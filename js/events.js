@@ -10,10 +10,16 @@ function frameIt(){
   })
 }
 function pressIt(){
-
+  $('form').on('keydown', (event)=> {
+    if (event.key === 'g'){
+      alert("You pressed g")
+    }
+  })
 }
 function submitIt(){
-
+  $('form').on('submit', function(){
+    alert("Your form is going to be submitted now.")
+  })
 }
 $(document).ready(function(){
 
